@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>AC Mod Center</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/bb70c3f107.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="top-container" id="top-container">
+    <h1>AC Mod Center</h1>
+    <p1>Mods for Assetto Corsa</p1>
+  </div>
+
+  <nav class="header" id="myHeader">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">AC Mod Center.</label>
+    <ul>
+      <li><a href="#" class="li1">Home</a></li>
+      <li><a href="#" class="li2">About</a></li>
+      <li><a href="#" class="li3">Contact</a></li>
+      <li><a href="#" class="li4">Login</a></li>
+      <li><a class="clsbtn" onclick="closeNav()">Close</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="content-1">Austria 2020 update
+      <div class="calosc">
+        <img class="img1" src="https://i.imgur.com/6EakCw0.png">
+        <div class="g_download"><a style="color:white" href="austria.html" class="austria_link">Download</a></div>
+      </div>
+    </div>
+
+    <div class="content-2">Hungary GP
+      <div class="calosc-2">
+        <img class="img2" src="https://i.imgur.com/EqDVETE.png">
+        <div class="h_download"><a style="color:white" href="hungary.html" class="hungary_link">Download</a></div>
+      </div>
+
+      <div class="content-3">Britain 2020 update
+        <div class="calosc-3">
+          <img class="img3" src="https://i.imgur.com/JHqJaPR.png">
+          <div class="b_download"><a style="color:white" href="britain.html">Download</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-4">Spain
+      <div class="calosc-4">
+        <img class="img4" src="https://i.imgur.com/LwANpgN.png">
+        <div class="s_download"><a style="color:white" href="spain.html">Download</a></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+
+      if (window.pageYOffset >= sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
